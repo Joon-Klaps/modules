@@ -1601,10 +1601,6 @@ kofamscan:
 - modules/nf-core/kofamscan/**
 - tests/modules/nf-core/kofamscan/**
 
-kraken2/downloaddatabase:
-- modules/nf-core/kraken2/downloaddatabase/**
-- tests/modules/nf-core/kraken2/downloaddatabase/**
-
 kraken2/kraken2:
 - modules/nf-core/kraken2/kraken2/**
 - modules/nf-core/untar/**
