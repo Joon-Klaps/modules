@@ -35,6 +35,7 @@ process KRAKEN2_BUILD {
         --download-taxonomy
 
     kraken2-build \\
+        --use-ftp \\
         --db ${prefix} \\
         --threads $task.cpus \\
         $args2 \\
