@@ -3620,6 +3620,10 @@ subworkflows/fasta_clean_fcs:
   - subworkflows/nf-core/fasta_clean_fcs/**
   - tests/subworkflows/nf-core/fasta_clean_fcs/**
 
+subworkflows/fasta_creatdb_cluster_createtsv_mmseqs:
+  - subworkflows/nf-core/fasta_creatdb_cluster_createtsv_mmseqs/**
+  - tests/subworkflows/nf-core/fasta_creatdb_cluster_createtsv_mmseqs/**
+
 subworkflows/fasta_index_dna:
   - subworkflows/nf-core/fasta_index_dna/**
   - tests/subworkflows/nf-core/fasta_index_dna/**
