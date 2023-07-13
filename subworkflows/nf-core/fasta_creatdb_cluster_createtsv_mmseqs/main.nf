@@ -5,13 +5,13 @@ include { MMSEQS_CREATETSV     } from '../../../modules/nf-core/mmseqs/createtsv
 workflow FASTA_CREATEDB_CLUSTER_CREATETSV_MMSEQS {
 
     take:
-    ch_input  // channel: [ val(meta), [ fasta/fastq ] ]
+    sequence  // channel: [ val(meta), [ fasta/fastq ] ]
 
     main:
 
     ch_versions = Channel.empty()
 
-    MMSEQS_CREATEDB ( ch_input )
+    MMSEQS_CREATEDB ( sequence )
     ch_seq_db   = MMSEQS_CREATEDB.out.db
     ch_versions = ch_versions.mix(MMSEQS_CREATEDB.out.versions.first())
 
